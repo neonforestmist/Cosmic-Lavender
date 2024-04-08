@@ -1,16 +1,17 @@
 /**
- * @name Cosmic Lavender v1
+ * @name Cosmic Lavender v1.1
  * @author y0shy0sh
- * @version 1.0.0
+ * @version 1.1.0
  * @description Turn it on or something
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @import url('https://discordstyles.github.io/SoftX/SoftX.css');
 @import url('https://discordstyles.github.io/SoftX/RadialGlow.css');
+@import url('https://s-k-y-l-i.github.io/discord-themes/Theme%20code/transparent-popups.css');
 
 :root {
-  --background-image: url('https://w0.peakpx.com/wallpaper/766/91/HD-wallpaper-purple-galaxy-artistic-space-high-definition-nebulae-beautiful-nice-nebula-cosmos-galaxies-blue-stars-art-amazing-widescreen-view-black-spatial-galaxy-infinity-cool-purple.jpg'); /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
+  --background-image: url('https://cdn.discordapp.com/attachments/1124656608941715540/1226674873825361970/product.gif?ex=6625a100&is=66132c00&hm=eb76759e8f51645601a528a6dfc431c313519124d5ec772b9f9b40ad6b2042c7&'); /* Background image | URL MUST BE A DIRECT LINK (ending in .jpg, .jpeg, .png, .gif) */
   --background-blur: 2px; /* Blur intensity of --background-image */
   --opacity: 0.70; /* Opacity of overall app. | Default: .85 */
   --accent: 142,107,176; /* Colour used around the app. | Values are in R,G,B format. | Default: 0, 231, 169 */
@@ -38,6 +39,56 @@
   --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
 }
 
-/* Any custom CSS below here */
+/* Some purple icons */
+svg, .lottieIcon__9d8ab, .lottieIcon_c7076c, .icon__67ab4, .iconContainer__6a580, .link_ddbb36 {
+  color: #8e6bb0;
+}
 
+svg:hover, .lottieIcon__9d8ab:hover, .lottieIcon_c7076c:hover {
+color: #4c3661;
+transition: color 0.2s ease;
+}
 
+.unread__48cf4 {
+  background-color: #8e6bb0;
+}
+/* Acrylic popups config */
+:root{
+    --blur-popup: 40px; /*Popup blur size*/
+    --opacity-popup: 0.6; /*Popup background opacity*/  
+    --radius-popup: 40px; /*Popup border radius*/
+    --radius-context: 20px; /*Context menu popups radius*/
+    /*--context-menu-border: 1px solid red; /*uncomment for custom border*/
+}
+/* force nitro light theme to always be nitro dark theme (profile colors) */
+sync off
+element.style {
+    --profile-gradient-primary-color: hsla(13, 32.8%, 73.1%, 1);
+    --profile-gradient-secondary-color: hsla(50, 77%, 77.8%, 1);
+    --profile-gradient-button-color: hsla(13, 20.4%, 36.5%, 1);
+    --profile-gradient-overlay-color: hsla(0,0%,100%,0.6);
+    --profile-body-background-color: hsla(0,0%,100%,0.45);
+    --profile-body-background-hover: hsla(0,0%,0%,0.08);
+    --profile-body-divider-color: hsla(13, 20.4%, 36.5%, 0.12);
+    --profile-avatar-border-color: hsla(13, 32.1%, 89%, 1);
+    --profile-message-input-border-color: hsla(50, 41.6%, 69.8%, 1);
+    --profile-note-background-color: hsla(0,0%,100%,0.3);
+    --profile-role-pill-background-color: hsla(0,0%,100%,0.5);
+    --profile-role-pill-border-color: hsla(228,6.67%,14.71%,0.2);
+}
+
+sync on
+element.style {
+    --profile-gradient-primary-color: hsla(13, 32.8%, 73.1%, 1);
+    --profile-gradient-secondary-color: hsla(50, 77%, 77.8%, 1);
+    --profile-gradient-button-color: hsla(13, 20.4%, 36.5%, 1);
+    --profile-gradient-overlay-color: hsla(0,0%,0%,0.6);
+    --profile-body-background-color: hsla(0,0%,0%,0.45);
+    --profile-body-background-hover: hsla(0,0%,100%,0.16);
+    --profile-body-divider-color: hsla(0, 0%, 100%, 0.24);
+    --profile-avatar-border-color: hsla(13, 12.3%, 14.3%, 1);
+    --profile-message-input-border-color: hsla(50, 18.2%, 55.9%, 1);
+    --profile-note-background-color: hsla(0,0%,0%,0.3);
+    --profile-role-pill-background-color: hsla(228,6.67%,14.71%,0.5);
+    --profile-role-pill-border-color: hsla(0,0%,100%,0.2);
+}
